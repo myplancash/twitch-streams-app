@@ -1,4 +1,3 @@
-
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -10,7 +9,6 @@ import {
 } from './types';
 
 import streams from '../apis/streams';
-import actions from 'redux-form/lib/actions';
 
 export const signIn = (userId) => {
   return {
