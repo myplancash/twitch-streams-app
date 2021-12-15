@@ -5,19 +5,6 @@ const INITIAL_STATE = {
   userId: null
 }
 
-// export default (state = INITIAL_STATE, action) => {
-//   switch(action.type) {
-//     case SIGN_IN:
-//       return {...state, isSignedIn: true, userId: action.payload}
-//     case SIGN_OUT:
-//       return {...state, isSignedIn: false, userId: null}
-//     default:
-//       return state;
-//   }
-// }
-
-// it might be wise to use named exports instead:
-
 const authReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {
     case SIGN_IN:
@@ -30,3 +17,18 @@ const authReducer = (state = INITIAL_STATE, action) => {
 };
 
 export default authReducer;
+
+
+
+// export default (state = INITIAL_STATE, action) => {
+//   switch(action.type) {
+//     case SIGN_IN:
+//       return {...state, isSignedIn: true, userId: action.payload}
+//     case SIGN_OUT:
+//       return {...state, isSignedIn: false, userId: null}
+//     default:
+//       return state;
+//   }
+// }
+
+// it might be wise to use named exports instead:
